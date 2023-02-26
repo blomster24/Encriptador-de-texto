@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Challenge Encriptador</title>
+</head>
+
+<body onload="iniciar()">
+    <main class="main">
+
+        <div class="div-principal">
+            <img class="logo" src="./assets/logo.png" alt="logo">
+            <textarea type="text" name="texto" id="texto" placeholder="Ingrese el texto aquí "></textarea>
+
+            <div class="seccion-inferior-botones">
+                <p>
+                    <img src="./assets/info.png" alt="">
+                    Solo letras minúsculas y sin acentos
+                </p>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="div-resultado">
+            <figure class="dibujo">
+                <img src="./assets/dibujo.png" alt="dibujo">
+            </figure>
+            <p class="p-resultado-ok">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut magni
+                sit dolor impedit! Ullam quia cupiditate deserunt sunt facere impedit, fuga unde assumenda ipsam magni
+                nam quos dignissimos vitae.</p>
+            <p class="p-resultado-1">Ningún texto fue encontrado</p>
+            <p class="p-resultado-2">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button class="btn-copiar" onclick="copiar()">Copiar</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Lufatimess Mimesgufatenterl Floberrenterz Henterrrenterrai - 2023</p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
